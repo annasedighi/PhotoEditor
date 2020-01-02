@@ -1,0 +1,45 @@
+:root {
+    --bgcolor: #ffc600;
+    --spacing: 10px;
+    --corners: 10px;
+    --opacity: 1;
+    --blur: 3px;
+    --height: 30rem;
+    --width: 50rem;
+    --rotate: 0deg;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    text-align: center;
+    background: #193549;
+    color: white;
+}
+
+.controls {
+    margin-bottom: 50px;
+}
+
+.imageContainer {
+    border-radius: var(--corners);
+    padding: var(--spacing);
+    height: var(--height);
+    width: var(--width);
+    background: var(--bgcolor);
+    margin: 0px auto;
+    transform: rotate(var(--rotate));
+}
+
+.imageContainer img {
+    height: 100%;
+    width: 100%;
+    filter: blur(var(--blur));
+    border-radius: var(--corners);
+    opacity: var(--opacity);
+}
+
+.title {
+    color: var(--bgcolor);
+}

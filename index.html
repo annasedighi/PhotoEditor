@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS variables</title>
+</head>
+
+<body>
+    <h1>change the CSS with <span class="title">JS</span></h1>
+    <div class="controls">
+        <label for="spacing">Padding:</label>
+        <input type="range" name="spacing" min="0" max="200" value="10" data-sizing="px">
+
+        <label for="blur">Blur:</label>
+        <input type="range" name="blur" min="0" max="15" value="3" data-sizing="px">
+
+        <label for="corners">Radius:</label>
+        <input type="range" name="corners" min="0" max="250" value="10" data-sizing="px">
+
+        <label for="opacity">Opacity:</label>
+        <input type="range" name="opacity" min="20" max="100" value="100" data-sizing="%">
+
+        <label for="height">Height:</label>
+        <input type="number" name="height" min="10" max="55" value="30" data-sizing="rem">
+
+        <label for="width">Width:</label>
+        <input type="number" name="width" min="20" max="100" value="50" data-sizing="rem">
+
+        <label for="rotate">Rotate:</label>
+        <input type="number" name="rotate" min="0" max="360" value="0" data-sizing="deg">
+
+        <label for="bgcolor">Color:</label>
+        <input type="color" name="bgcolor" value="#ffc600">
+
+
+    </div>
+    <div class="imageContainer">
+        <img src="souces/abstract.jpg">
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
